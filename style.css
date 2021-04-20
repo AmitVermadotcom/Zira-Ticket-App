@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 12vh;
+    background-color: #333;
+    display: flex;
+}
+
+.ticket-container{
+    height: 88vh;
+    background-color: #f2f2f2;
+
+}
+
+.filter-container, .add-delete-container{
+    height: 8vh;
+    background-color: #444;
+    margin-top: 2vh;
+    margin-left: 8vw;
+    border-radius: 3px;
+
+}
+.filter-container{
+    width: 18vw;
+    display: flex;
+}
+.add-delete-container{
+    width: 9vw;
+    display: flex;
+}
+
+.filter {
+    height: 100%;
+    width: 25%;
+    /* display: flex; */
+}
+
+.pink-clr-btn,
+.blue-clr-btn,
+.green-clr-btn,
+.red-clr-btn {
+    display: block;
+    width: 40%;
+    height: 40%;
+    border-radius: 3px;
+    margin: calc(8vh * 0.3) calc(4.5vw * 0.3);
+    /* margin-top: calc(8vh * 0.3);
+    margin-bottom: calc(8vh * 0.3);
+    margin-left: calc(4.5vw * 0.3);
+    margin-right:  calc(4.5vw * 0.3); */
+}
+
+.pink-clr-btn {
+    background-color: pink;
+}
+
+.blue-clr-btn {
+    background-color: blue;
+}
+
+.green-clr-btn {
+    background-color: greenyellow;
+}
+
+.red-clr-btn {
+    background-color: red;
+}
+
+.filter:hover {
+    background-color: black;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.add, .delete {
+    height: 100%;
+    width: 50%;
+}
+
+.action-btn {
+    height: 40%;
+    width: 40%;
+    margin: calc(8vh * 0.3) calc(4.5vw * 0.3);
+    background-color: honeydew;
+    padding-left: 2%;
+    border-radius: 2px;
+}
+
+.add:hover, .delete:hover {
+    background-color: black;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.popUp {
+    height: 25vh;
+    width: 25vw;
+    
+}
+
+
