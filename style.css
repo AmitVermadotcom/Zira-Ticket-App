@@ -1,36 +1,38 @@
-body{
-    margin: 0;
+body {
+    margin: 0
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
-.navbar{
+.navbar {
     height: 12vh;
-    background-color: #333;
+    background-color: rgb(149, 90, 197);
     display: flex;
 }
 
-.ticket-container{
+.ticket-container {
     height: 88vh;
-    background-color: #f2f2f2;
-
+    background-color: #f0ecec;
+    position: relative;
 }
 
-.filter-container, .add-delete-container{
+.filter-container,
+.add-delete-container {
     height: 8vh;
-    background-color: #444;
     margin-top: 2vh;
     margin-left: 8vw;
-    border-radius: 3px;
-
+    border-radius: 5px;
+    background-color: #d0fdde;
 }
-.filter-container{
+
+.filter-container {
     width: 18vw;
     display: flex;
 }
-.add-delete-container{
+
+.add-delete-container {
     width: 9vw;
     display: flex;
 }
@@ -38,69 +40,106 @@ body{
 .filter {
     height: 100%;
     width: 25%;
-    /* display: flex; */
 }
 
-.pink-clr-btn,
-.blue-clr-btn,
-.green-clr-btn,
-.red-clr-btn {
+.pink-color-btn,
+.blue-color-btn,
+.green-color-btn,
+.yellow-color-btn {
     display: block;
     width: 40%;
     height: 40%;
     border-radius: 3px;
-    margin: calc(8vh * 0.3) calc(4.5vw * 0.3);
-    /* margin-top: calc(8vh * 0.3);
+    margin-top: calc(8vh * 0.3);
     margin-bottom: calc(8vh * 0.3);
     margin-left: calc(4.5vw * 0.3);
-    margin-right:  calc(4.5vw * 0.3); */
+    margin-right: calc(4.5vw * 0.3);
 }
 
-.pink-clr-btn {
+.pink-color-btn, .modal-pink-filter {
     background-color: pink;
 }
 
-.blue-clr-btn {
+.green-color-btn, .modal-green-filter {
+    background-color: green;
+}
+
+.yellow-color-btn, .modal-yellow-filter {
+    background-color: yellow;
+}
+
+.blue-color-btn, .modal-blue-filter {
     background-color: blue;
-}
-
-.green-clr-btn {
-    background-color: greenyellow;
-}
-
-.red-clr-btn {
-    background-color: red;
 }
 
 .filter:hover {
     background-color: black;
     cursor: pointer;
-    border-radius: 3px;
 }
-.add, .delete {
+
+.add,.delete {
     height: 100%;
     width: 50%;
 }
 
 .action-btn {
+    display: block;
     height: 40%;
     width: 40%;
-    margin: calc(8vh * 0.3) calc(4.5vw * 0.3);
-    background-color: honeydew;
-    padding-left: 2%;
+    margin-top: calc(8vh * 0.3);
+    margin-bottom: calc(8vh * 0.3);
+    margin-left: calc(4.5vw * 0.3);
+    margin-right: calc(4.5vw * 0.3);
+    background-color: white;
+    padding-left: 3%;
     border-radius: 2px;
 }
 
 .add:hover, .delete:hover {
     background-color: black;
     cursor: pointer;
-    border-radius: 3px;
 }
 
-.popUp {
-    height: 25vh;
-    width: 25vw;
-    
+.modal {
+    box-shadow: 0px 0px 50px 10px rgb(238, 144, 144);
+    height: 18rem;
+    width: 35rem;
+    background-color: white;
+    display: flex;
+    position: absolute;
+    top: 10rem;
+    left: calc((100vw - 35rem) / 2)
 }
 
+.task-to-be-added {
+    width: 70%;
+    height: 100%;
+    padding: 3rem;
+    outline: none;
+    overflow: auto;
+}
+
+.modal-priority-list {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    justify-content: space-between;
+    padding: 3rem;
+    background-color: #444;
+}
+
+.modal-filter {
+    width: 100%;
+    height: 20%;
+}
+
+.modal-filter:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.modal-filter.active {
+    border: 5px solid rgb(245, 91, 91);
+}
 
